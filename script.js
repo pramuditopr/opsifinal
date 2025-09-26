@@ -23,7 +23,7 @@ const webcamElement = document.getElementById('webcam');
 const captureBtn = document.getElementById('captureBtn');
 
 // Teachable Machine Model
-const URL = "https://teachablemachine.withgoogle.com/models/P1pAGWkKi/";
+const URL = "https://teachablemachine.withgoogle.com/models/mmvyDFj6z/";
 let model, webcam, labelContainer, maxPredictions;
 
 // Initialize the model
@@ -65,7 +65,7 @@ async function setupWebcam() {
         activateCameraBtn.style.display = 'none';
         cameraView.classList.remove('hidden');
 
-        const constraints = { video: { width: 224, height: 224 } };
+        const constraints = { video: { width: 224, height: 224, facingMode: "environment"} };
         const stream = await navigator.mediaDevices.getUserMedia(constraints);
         webcamElement.srcObject = stream;
         await webcamElement.play();
