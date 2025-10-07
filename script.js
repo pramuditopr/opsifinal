@@ -23,7 +23,7 @@ const webcamElement = document.getElementById('webcam');
 const captureBtn = document.getElementById('captureBtn');
 
 // Teachable Machine Model
-const URL = "https://teachablemachine.withgoogle.com/models/mmvyDFj6z/";
+const URL = "https://teachablemachine.withgoogle.com/models/wv7FAqivr/";
 let model, webcam, labelContainer, maxPredictions;
 
 // Initialize the model
